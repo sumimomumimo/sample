@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>今日のメニューはこれ！</title>
+
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+  <div class="content">
+  <header>
+    <h1>今日のメニューはこれ！</h1>
+    <p>献立を自動で決めてストレスフリー</p>
+    <!--<a href="" class="btn">中華料理</a>-->
+    
+    <img src="food_gyouza_enban.png" alt="中華料理" width="200" height="200" id="image1">
+    <img src="food_yakiniku_samugyopusaru.png" alt="韓国料理" width="200" height="200" id="image2">
+    <img src="food_spaghetti_vongole_bianco.png" alt="イタリア料理" width="200" height="200" id="image3">
+    
+  </header>
+  </div>
+  <script>
+    document.getElementById('image1').addEventListener('click', function() {
+      window.location.href = 'https://recipe.rakuten.co.jp/category/41'; 
+    });
+    document.getElementById('image2').addEventListener('click', function() {
+      window.location.href = 'https://recipe.rakuten.co.jp/category/42'; 
+    });
+    document.getElementById('image3').addEventListener('click', function() {
+      window.location.href = 'https://recipe.rakuten.co.jp/category/43'; 
+    });
+
+  </script>
+</body>
+</html>
