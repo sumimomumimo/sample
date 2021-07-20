@@ -1,0 +1,22 @@
+h1 {
+    font-size: 24px; margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+.content {
+    background-color: rgb(204, 245, 255);
+    width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    box-shadow: 0 0 8px rgb(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+}
