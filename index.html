@@ -33,15 +33,22 @@
   </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="path/to/my/store.legacy.min.js"></script>
+  
   <script>
-
+      
 
      $.getJSON("url_box.json", (data) => {
         console.log(`${data.url}`);
 
     });
   
+    const { PythonShell } = require('python-shell');
 
+    PythonShell.run('app.py', null, function(err, data) {
+      if (err) throw err;
+      console.log(data);
+    });
     //cument.getElementById('image1').addEventListener('click', function() {
       //$.getJSON("url_box.json", getFunc);
 
