@@ -9,7 +9,6 @@ import random
 import pandas as pd
 import numpy as np
 import requests
-import app
 import json
 from django.shortcuts import render
 import json
@@ -48,6 +47,7 @@ for li_tag in li:
     a_tag.append(link)
 
 i = random.randrange(0,len(a_tag))
+print('Content-type: text/html\n')
 print(a_tag[i])
 
 d_new = {'url': str(a_tag[i])}
