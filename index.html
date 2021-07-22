@@ -47,22 +47,7 @@
           console.log('failed');
       });
     });
-  
-    const { PythonShell } = require('python-shell');
 
-    PythonShell.run('app.py', null, function(err, data) {
-      if (err) throw err;
-      console.log(data);
-    });
-    //cument.getElementById('image1').addEventListener('click', function() {
-      //$.getJSON("url_box.json", getFunc);
-
-      //});
-      //function getFunc(url){
-      //window.location.href = url.url;
-    //} 
-    
-  
     document.getElementById('image2').addEventListener('click', function() {
       window.location.href = 'https://recipe.rakuten.co.jp/category/43'; 
     });
