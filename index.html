@@ -43,7 +43,7 @@
 
     });
   
-    const { PythonShell } = require('python-shell');
+    //const { PythonShell } = require('python-shell');
 
     // PythonShell.run('app.py', null, function(err, data) {
     //   if (err) throw err;
@@ -58,7 +58,10 @@
       //function getFunc(url){
       //window.location.href = url.url;
     //} 
-    
+
+    document.getElementById('image1').addEventListener('click', function() {
+      window.location.href = `${data.url}`; 
+    });
   
     document.getElementById('image2').addEventListener('click', function() {
       window.location.href = 'https://recipe.rakuten.co.jp/category/43'; 
