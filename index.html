@@ -40,7 +40,7 @@
 
       (function(){
         $.ajax({
-          url: 'app.py',
+          url: 'app.py', type: 'get'
       }).done(function(data){
           console.log(data);
       }).fail(function(){
