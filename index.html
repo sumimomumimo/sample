@@ -36,12 +36,22 @@
   <script src="path/to/my/store.legacy.min.js"></script>
   
   <script>
-      
+  (function(){
+      $.ajax({
+      url: 'app.py',
+      type: 'get',
+      //category:'category'
+      }).done(function(data){
+          console.log(data);
+      }).fail(function(){
+          console.log('failed');
+      });
+  });
 
-     $.getJSON("url_box.json", (data) => {
-        console.log(`${data.url}`);
+    //  $.getJSON("url_box.json", (data) => {
+    //     console.log(`${data.url}`);
 
-    });
+    // });
   
     //const { PythonShell } = require('python-shell');
 
@@ -50,14 +60,6 @@
     //   console.log(data);
     // });
 
-
-    //cument.getElementById('image1').addEventListener('click', function() {
-      //$.getJSON("url_box.json", getFunc);
-
-      //});
-      //function getFunc(url){
-      //window.location.href = url.url;
-    //} 
 
     document.getElementById('image1').addEventListener('click', function() {
       window.location.href = `${data.url}`; 
