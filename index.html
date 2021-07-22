@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>今日のメニューはこれ！</title>
 
-  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="sanitize.css">
   <!--<link rel="stylesheet" href="css/style.css">-->
   <style>
     h1 {font-size: 24px; margin: 0;}
@@ -31,13 +31,30 @@
     
   </header>
   </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    document.getElementById('image1').addEventListener('click', function() {
-      window.location.href = 'https://recipe.rakuten.co.jp/category/41'; 
+
+
+     $.getJSON("url_box.json", (data) => {
+        console.log(`${data.url}`);
+
     });
+  
+
+    //cument.getElementById('image1').addEventListener('click', function() {
+      //$.getJSON("url_box.json", getFunc);
+
+      //});
+      //function getFunc(url){
+      //window.location.href = url.url;
+    //} 
+    
+  
     document.getElementById('image2').addEventListener('click', function() {
-      window.location.href = 'https://recipe.rakuten.co.jp/category/42'; 
+      window.location.href = 'https://recipe.rakuten.co.jp/category/43'; 
     });
+
     document.getElementById('image3').addEventListener('click', function() {
       window.location.href = 'https://recipe.rakuten.co.jp/category/43'; 
     });
