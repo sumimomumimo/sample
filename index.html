@@ -38,29 +38,29 @@
   <script>
       
 
-      (function(){
+    (function(){
         $.ajax({
-          url: 'app.py', type: 'get'
+          url: 'app.py',
       }).done(function(data){
           console.log(data);
       }).fail(function(){
           console.log('failed');
       });
-  });
+    });
   
-  const { PythonShell } = require('python-shell');
+    const { PythonShell } = require('python-shell');
 
     PythonShell.run('app.py', null, function(err, data) {
       if (err) throw err;
       console.log(data);
     });
-    cument.getElementById('image1').addEventListener('click', function() {
-      $.getJSON("url_box.json", getFunc);
+    //cument.getElementById('image1').addEventListener('click', function() {
+      //$.getJSON("url_box.json", getFunc);
 
-      });
-      function getFunc(url){
-      window.location.href = url.url;
-    } 
+      //});
+      //function getFunc(url){
+      //window.location.href = url.url;
+    //} 
     
   
     document.getElementById('image2').addEventListener('click', function() {
