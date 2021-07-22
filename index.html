@@ -38,15 +38,15 @@
   <script>
       
 
-  //   (function(){
-  //       $.ajax({
-  //         url: 'app.py',
-  //     }).done(function(data){
-  //         console.log(data);
-  //     }).fail(function(){
-  //         console.log('failed');
-  //     });
-  // });
+      (function(){
+        $.ajax({
+          url: 'app.py',
+      }).done(function(data){
+          console.log(data);
+      }).fail(function(){
+          console.log('failed');
+      });
+  });
   
     const { PythonShell } = require('python-shell');
 
